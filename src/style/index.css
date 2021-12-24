@@ -1,0 +1,44 @@
+body{
+    position: relative;
+}
+header{
+    display: inline;
+}
+main{
+    margin-top: 20px;
+}
+main .kategori{
+    border: 1px solid black;
+}
+list-makanan{
+    display: flex;
+    flex-wrap: wrap;
+}
+card-makanan{
+    flex-basis: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+footer{
+    margin-top: 20px;
+}
+@media screen and (max-width: 1125px){
+    list-makanan{
+        justify-content: center;
+    }
+    card-makanan{
+        flex-basis: 33%;
+        padding: 10px;
+        box-sizing: border-box;
+    }            
+}
+@media screen and (max-width: 800px){
+    list-makanan{
+        justify-content: center;
+    }
+    card-makanan{
+        flex-basis: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+    }            
+}
